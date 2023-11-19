@@ -1,4 +1,4 @@
-# ImhoffBen-PortfolioWeb
+# Mi Portfolio Web (Bennett Imhoff)
  
 Este portfolio estuvo hecho en el marco del trabajo final del curso de "Diseño Web" de Alkemy.          
            
