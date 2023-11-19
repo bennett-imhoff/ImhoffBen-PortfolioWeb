@@ -1,0 +1,728 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;800&display=swap');
+
+@keyframes animateText {
+    0%{
+        color:transparent;
+    }
+    100%{
+        color:rgb(46, 46, 46);
+    }
+}
+
+.nombre-portfolio a{
+    font-family: 'Raleway';
+    font-size: 25px;
+    font-weight: bolder;
+    color: #5cb874;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.btn-atras{
+    color:black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.texto-atras, .icono-atras{
+    font-family: 'Open Sans';
+    font-size:14px;
+    margin:0 3px;
+}
+
+#inicio-categorias{
+    margin-top:65px;
+}
+
+.img-categoria{
+    font-size:40px;
+    width:fit-content;
+    margin-bottom: 15px;
+}
+
+.titulo-categoria{
+    font-family: 'Raleway';
+    font-size: 25px;
+    font-weight: bolder;
+    text-align: center;
+    text-transform: uppercase;
+    color:transparent;
+    animation: animateText 2s linear forwards;
+    width:fit-content;
+}
+
+.opciones{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.item-categoria .nav-link{
+    font-size:14px;
+    text-align: center;
+    color:rgb(46, 46, 46);
+    margin:0;
+    padding:10px 15px;
+}
+
+.divider{
+    color:#3d8f53;
+    opacity:0.5;
+    width: 60%;
+    margin: 20px auto;
+}
+
+.titulo-subcategoria{
+    font-family: 'Raleway';
+    font-size: 20px;
+    font-weight: bolder;
+    color:rgb(46, 46, 46);
+    text-transform: uppercase;
+    width: fit-content;
+    margin-left:15px;
+    margin-bottom:10px;
+    padding-bottom:10px;
+    border-bottom:2px solid #5cb874;
+}
+
+.lenguaje, .herramienta-web, .herramienta-diseño,
+.metodologia, .herramienta-gestion, .herramienta-comunicacion{
+    margin-top:15px;
+    margin-left:15px;
+}
+
+.icono-lenguaje, .icono-herramienta-web{
+    font-size:30px;
+    color:#5cb874;
+    padding:5px 8px;
+}
+
+.nombre-lenguaje, .nombre-framework, .nombre-bbdd,
+.nombre-herramienta-web, .nombre-herramienta-diseño, .nombre-herramienta-gestion,
+.nombre-herramienta-comunicacion{
+    font-size:16px;
+    font-weight: 400;
+    width:25%;
+    margin:0 15px;
+}
+
+.nombre-framework, .nombre-bbdd, .nombre-herramienta-diseño,
+.nombre-herramienta-gestion, .nombre-herramienta-comunicacion{
+    font-size: 14px;
+    font-weight: bold;
+    width:fit-content;
+    margin:10px 0;
+}
+
+.divider-lenguajes, .divider-diseño{
+    opacity: 0.2;
+    width: 70%;
+    margin:15px auto;
+}
+
+.contenedor-frameworks, .contenedor-bases-de-datos, .contenedor-diseño-grafico{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top:15px;
+}
+
+.framework, .base-de-datos{
+    width:85%;
+    margin:10px 0px;
+}
+
+.img-framework, .img-bbdd, .img-herramienta-diseño,
+.img-herramienta-gestion, .img-herramienta-comunicacion{
+    width:60%;
+    height: 62px;
+}
+
+.experticia-framework, .experticia-bbdd, .experticia-herramienta-diseño{
+    font-size:14px;
+    text-align: center;
+}
+
+.contenedor-control-versiones, .contenedor-diseño-responsivo{
+    width:90%;
+}
+
+.img-git{
+    width:50px;
+    height:50px;
+    margin:20px 0;
+}
+
+.enlace-git{
+    color:#3d8f53;
+    cursor: pointer;
+}
+
+.carrusel-responsivos{
+    width:70%;
+    margin:20px auto;
+}
+
+.carousel-control-prev-icon {
+    background-image: url("../img/otras/icon-back.png");
+}
+
+.carousel-control-next-icon {
+    background-image: url("../img/otras/icon-next.png");
+}
+
+.img-proyecto-responsivo{
+    height:430px;
+    border-radius:10px;
+}
+
+.metodologia{
+    width:80%;
+    margin:20px auto;
+}
+
+.icon-metodologia{
+    width:20%;
+    margin-right:10px;
+}
+
+.nombre-metodologia{
+    font-family: 'Open Sans';
+    font-size:16px;
+    font-weight: bold;
+}
+
+.descripcion-metodologia{
+    font-family: 'Open Sans';
+    font-size:14px;
+}
+
+.contenedor-herramientas-gestion, .contenedor-herramientas-comunicacion{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left:-15px;
+}
+
+.nombre-herramienta-gestion, .nombre-herramienta-comunicacion{
+    font-family: 'Raleway';
+    font-weight: 400;
+}
+
+.img-herramienta-gestion:hover, .img-herramienta-comunicacion:hover{
+    width:70%;
+}
+
+.lista-hab-interpersonales{
+    padding:0;
+    margin-top:10px;
+    margin-left:10px;
+}
+
+.lista-hab-interpersonales li{
+    list-style: none;
+}
+
+.lista-hab-interpersonales .bi{
+    color:#5cb874;
+}
+
+.icono-habilidad{
+    font-size:20px;
+    margin:0 10px;
+}
+
+.img-idioma{
+    background-color: #5cb874;
+    width:35px;
+    height:35px;
+    margin-top:-5px;
+    margin-left:-20px;
+    margin-right: 10px;
+    padding:7px;
+    border-radius: 50%;
+}
+
+.texto-idioma a{
+    color:#5cb874;
+    cursor: pointer;
+}
+
+footer{
+    background-color: black;
+    padding-top:30px;
+}
+
+.titulo-footer, .subtitulo-footer{
+    color:white;
+    text-align: center;
+}
+
+.titulo-footer{
+    font-family: 'Raleway';
+    font-size:20px;
+    font-weight: bold;
+}
+
+.subtitulo-footer{
+    font-family:'Open Sans';
+    font-size:15px;
+    line-height: 1.5;
+    width:90%;
+}
+
+.link-redes-sociales{
+    text-decoration: none;
+    padding-bottom:20px;
+    cursor: pointer;
+}
+
+.link-redes-sociales .bi{
+    font-size:25px;
+    color:white;
+    background-color: #5cb874;
+    padding: 5px 10px;
+    margin:0 10px;
+    border-radius: 50%;
+}
+
+.link-redes-sociales .bi:hover{
+    background-color: #266938;
+}
+
+.made-by{
+    font-family: 'Open Sans';
+    font-size:12px;
+    text-align: center;
+    color:white;
+}
+
+.made-by span{
+    color:#5cb874;
+}
+
+/**********************************************
+*   DISPOSITIVOS GRANDES, DESDE 720 HASTA 991
+***********************************************/
+@media screen and (min-width:720px) {
+    .img-categoria{
+        font-size:60px;
+    }
+    
+    .titulo-categoria{
+        font-size: 35px;
+    }
+    
+    .opciones{
+        display: flex;
+    }
+    
+    .item-categoria .nav-link{
+        font-size:18px;
+    }
+    
+    .divider{
+        margin: 30px auto;
+        width: 50%;
+    }
+
+    .titulo-subcategoria{
+        font-size: 25px;
+        margin-left:35px;
+    }
+    
+    .lenguaje, .herramienta-web, .herramienta-diseño,
+    .metodologia, .herramienta-gestion, .herramienta-comunicacion{
+        margin-left:35px;
+    }
+    
+    .icono-lenguaje, .icono-herramienta-web{
+        font-size:40px;
+    }
+    
+    .nombre-lenguaje, .nombre-framework, .nombre-bbdd,
+    .nombre-herramienta-web, .nombre-herramienta-diseño, .nombre-herramienta-gestion,
+    .nombre-herramienta-comunicacion{
+        font-size:20px;
+    }
+    
+    .nombre-framework, .nombre-bbdd, .nombre-herramienta-diseño, .nombre-herramienta-gestion,
+    .nombre-herramienta-comunicacion{
+        text-align: center;
+        width: fit-content;
+    }
+    
+    .img-framework, .img-bbdd, .img-herramienta-diseño,
+    .img-herramienta-gestion, .img-herramienta-comunicacion{
+        width:60%;
+        height:100px;
+    }
+    
+    .experticia-framework, .experticia-bbdd, .experticia-herramienta-diseño{
+        font-size:18px;
+        text-align: center;
+    }
+    
+    .img-git{
+        width:100px;
+        height:100px;
+    }
+
+    .texto-git, .texto-diseño-responsivo{
+        font-size:18px;
+    }
+
+    .carrusel-responsivos{
+        width:40%;
+    }
+
+    .img-herramienta-diseño, .img-herramienta-gestion, .img-herramienta-comunicacion{
+        width:50%;
+    }
+    
+    .img-proyecto-responsivo{
+        height:430px;
+        border-radius:10px;
+    }
+    
+    .icon-metodologia{
+        width:15%;
+        margin-right:30px;
+        margin-top:30px;
+        margin-bottom: 30px;
+    }
+    
+    .nombre-metodologia{
+        font-size:20px;
+    }
+    
+    .descripcion-metodologia{
+        font-size:16px;
+    }
+    
+    .contenedor-herramientas-gestion, .contenedor-herramientas-comunicacion{
+        margin-top:40px;
+        margin-left:-15px;
+    }
+    
+    .herramienta-gestion, .herramienta-comunicacion{
+        margin:20px 0;
+    }
+
+    .img-herramienta-gestion, .img-herramienta-comunicacion{
+        width:40%;
+    }
+
+    .nombre-herramienta-gestion, .nombre-herramienta-comunicacion{
+        font-family: 'Raleway';
+        font-weight: 400;
+    }
+    
+    .img-herramienta-gestion:hover, .img-herramienta-comunicacion:hover{
+        width:70%;
+    }
+
+    .lista-hab-interpersonales{
+        margin-top:30px;
+        margin-left:20px;
+    }
+
+    .lista-hab-interpersonales li{
+        margin:30px 20px 30px 0;
+    }
+
+    .icono-habilidad{
+        font-size:30px;
+        margin:0 10px;
+    }
+
+    .texto-hab-interpersonal, .texto-idioma{
+        font-size:20px;
+    }
+
+    .lista-idiomas li{
+        margin:20px;
+    }
+
+    .img-idioma{
+        width:40px;
+        height:40px;
+        padding:10px;
+    }
+
+    .titulo-footer{
+        font-size:30px;
+        margin-top:40px;
+    }
+
+    .subtitulo-footer{
+        font-size:20px;
+    }
+
+    .link-redes-sociales .bi{
+        font-size:35px;
+        margin:0 20px;
+    }
+
+    .made-by{
+        font-size:16px;
+        margin-top:35px;
+    }
+}
+
+/**********************************************
+*   TABLES PEQUEÑAS, DESDE 992px HASTA 1365px
+***********************************************/
+@media screen and (min-width:992px){
+    .item-categoria .nav-link{
+        font-size:25px;
+    }
+
+    .titulo-subcategoria{
+        font-size: 28px;
+        margin-top:50px !important;
+    }
+    
+    .icono-lenguaje, .icono-herramienta-web{
+        font-size:50px;
+    }
+
+    .nombre-lenguaje, .nombre-herramienta-web{
+        width:60%;
+    }
+    
+    .nombre-lenguaje, .nombre-framework, .nombre-bbdd,
+    .nombre-herramienta-web, .nombre-herramienta-diseño, .nombre-herramienta-gestion,
+    .nombre-herramienta-comunicacion{
+        font-size:25px;
+    }
+    
+    .img-framework, .img-bbdd, .img-herramienta-diseño,
+    .img-herramienta-gestion, .img-herramienta-comunicacion, .img-herramienta-comunicacion{
+        width:50%;
+        height:120px;
+        margin:30px 0;
+    }
+    
+    .experticia-framework, .experticia-bbdd, .texto-git,
+    .experticia-herramienta-diseño, .texto-diseño-responsivo{
+        font-size:22px;
+    }
+
+    .carrusel-responsivos{
+        width:40%;
+    }
+
+    .img-herramienta-diseño, .img-herramienta-gestion, .img-herramienta-comunicacion{
+        width:50%;
+    }
+    
+    .img-proyecto-responsivo{
+        height:500px;
+        border-radius:10px;
+    }
+    
+    .nombre-metodologia{
+        font-size:25px;
+    }
+    
+    .descripcion-metodologia{
+        font-size:20px;
+    }
+
+    .contenedor-herramientas-comunicacion, .contenedor-herramientas-gestion{
+        width: 900px;
+    }
+    
+    .contenedor-herramientas-gestion{
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .contenedor-herramientas-comunicacion{
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .img-herramienta-gestion{
+        width:40%;
+        height:40%;
+    }
+
+    .img-herramienta-comunicacion{
+        width:30%;
+        height: 40%;
+    }
+}
+
+/**********************************************
+*   ORDENADOR PORTATIL, DESDE 1366px HASTA 1919
+***********************************************/
+@media screen and (min-width:1366px){
+    .nombre-lenguaje, .nombre-herramienta-web{
+        width:70%;
+    }
+
+    .titulo-subcategoria{
+        margin-top:70px !important;
+    }
+
+    .contenedor-lenguajes, .contenedor-herramientas-web, .contenedor-metodologias{
+        width:60%;
+        margin:auto;
+    }
+
+    .contenedor-frameworks, .contenedor-bases-de-datos, .contenedor-diseño-grafico{
+        display:grid;
+        grid-template-columns: repeat(5, 1fr);
+        margin-top:15px;
+    }
+
+    .carrusel-responsivos{
+        width:20%;
+    }
+
+    .carousel-control-next-icon{
+        margin-left:-700px;
+    }
+
+    .carousel-control-prev-icon{
+        margin-right:-650px;
+    }
+
+    .metodologia{
+        width:90%;
+    }
+    
+    .icon-metodologia{
+        width:10%;
+        margin-right:50px;
+        margin-left: 30px;
+    }
+    
+    .nombre-metodologia{
+        font-size:25px;
+    }
+    
+    .descripcion-metodologia{
+        font-size:22px;
+    }
+
+    .contenedor-herramientas-gestion, .contenedor-herramientas-comunicacion{
+        grid-template-columns: repeat(8, 1fr);
+        width: 1200px;
+        margin-top:10px;
+        margin-bottom: 0px;
+    }
+    
+    .nombre-herramienta-gestion, .nombre-herramienta-comunicacion{
+        font-family: 'Raleway';
+        font-weight: 400;
+        font-size:20px;
+    }
+    
+    .img-herramienta-gestion:hover{
+        width:35%;
+    }
+
+    .img-herramienta-comunicacion:hover{
+        width:25%;
+    }
+
+    .icono-habilidad{
+        margin:-5px 10px;
+    }
+}
+
+/**********************************************
+*   PC GRANDE., DESDE 1920px EN ADELANTE
+***********************************************/
+@media screen and (min-width:1920px){
+    .lenguaje, .herramienta-web, .herramienta-diseño,
+    .metodologia, .herramienta-gestion, .herramienta-comunicacion{
+        margin-left:150px;
+    }
+
+    .img-framework, .img-bbdd, .img-herramienta-diseño,
+    .img-herramienta-gestion, .img-herramienta-comunicacion{
+        width:35%;
+        height:100px;
+    }
+
+    .img-herramienta-diseño{
+        height:80px;
+    }
+
+    .texto-git, .texto-diseño-responsivo{
+        line-height: 2;
+        width:75%;
+        margin:auto;
+        padding-bottom:40px;
+    }
+
+    .titulo-subcategoria{
+        margin-left:100px !important;
+    }
+
+    .carrusel-responsivos{
+        width:15%;
+    }
+
+    .carousel-control-next-icon{
+        margin-left:-1100px;
+    }
+
+    .carousel-control-prev-icon{
+        margin-right:-1070px;
+    }
+
+    .contenedor-herramientas-gestion, .contenedor-herramientas-comunicacion{
+        grid-template-columns: repeat(10, 1fr);
+        margin-top:10px;
+        margin-bottom: 0px;
+        margin-left:70px;
+    }
+
+    .contenedor-herramientas-comunicacion, .contenedor-herramientas-gestion{
+        width: 1800px;
+    }
+
+    .herramienta-gestion, .herramienta-comunicacion{
+        margin:0;
+    }
+    
+    .nombre-herramienta-gestion, .nombre-herramienta-comunicacion{
+        font-size:25px;
+    }
+
+    .img-herramienta-gestion{
+        width: 45%;
+    }
+
+    .img-herramienta-comunicacion{
+        height:35%;
+    }
+    
+    .img-herramienta-gestion:hover{
+        width:35%;
+    }
+
+    .img-herramienta-comunicacion:hover{
+        width:25%;
+    }
+
+    .lista-hab-interpersonales, .lista-idiomas{
+        margin-top:50px;
+        margin-left:80px;
+    }
+
+    .icono-habilidad{
+        font-size:35px;
+        margin:-8px 30px;
+    }
+
+    .texto-hab-interpersonal, .texto-idioma{
+        font-size:25px;
+    }
+
+    .img-idioma{
+        margin-right:25px;
+    }
+}

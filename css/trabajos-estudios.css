@@ -1,0 +1,123 @@
+.img-icono{
+    width:80%;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.detalles p, .detalles li{
+    font-family: 'Open Sans';
+    font-size: 14px;
+}
+
+.detalles li{
+    margin:10px 0 0 -20px;
+}
+
+.titulo-item{
+    font-family: 'Raleway';
+    font-size:16px;
+    text-transform: uppercase;
+}
+
+.texto-oscuro{
+    color:#088471;
+}
+
+.texto-claro{
+    color:#5cb874;
+}
+
+/**********************************************
+*   DISPOSITIVOS GRANDES, DESDE 720 HASTA 991
+***********************************************/
+@media screen and (min-width:720px){
+    .contenedor-interno{
+        max-width:700px;
+    }
+
+    .img-icono{
+        width:60%;
+        margin-left: 30px;
+    }
+    
+    .detalles p, .detalles li{
+        font-size: 20px;
+    }
+    
+    .titulo-item{
+        font-size:25px;
+    }
+    
+    .texto-oscuro{
+        color:#088471;
+    }
+    
+    .texto-claro{
+        color:#5cb874;
+    }
+}
+
+/**********************************************
+*   TABLES PEQUEÑAS, DESDE 992px HASTA 1365px
+***********************************************/
+@media screen and (min-width:992px){
+    .contenedor-interno{
+        max-width:900px;
+    }
+
+    .img-icono{
+        width:100%;
+        margin-left: 0px;
+    }
+
+    .img-icono:hover{
+        width:90%;
+    }
+    
+    .detalles p, .detalles li{
+        font-size: 18px;
+    }
+    
+    .titulo-item{
+        font-size:22px;
+    }
+
+    .columna-estudio{
+        margin-top:30px;
+    }
+}
+
+/**********************************************
+*   ORDENADOR PORTATIL, DESDE 1366px HASTA 1919
+***********************************************/
+@media screen and (min-width:1366px) {
+    .contenedor-interno{
+        max-width:1300px;
+    }
+
+    .img-icono{
+        width:80%;
+        margin-left: 10px;
+    }
+
+    .img-icono:hover{
+        width:70%;
+    }
+}
+
+/**********************************************
+*   PC GRANDE., DESDE 1920px EN ADELANTE
+***********************************************/
+@media screen and (min-width:1920px){
+    .contenedor-interno{
+        max-width:1900px;
+        margin-top: 90px !important;
+    }
+    .titulo-item{
+        font-size:30px;
+    }
+
+    .detalles p, .detalles li{
+        font-size: 25px;
+    }
+}

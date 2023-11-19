@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ben Imhoff - Correo Simpsons</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="../../img/iconos-title/correo.png" rel="icon">
+    <link href="../../css/proyectos.css" rel="stylesheet">
+</head>
+<body>
+    <section id="header" class="fixed-top bg-light">
+        <header class="d-flex align-items-center">
+            <div class="contenedor-barra-superior container d-flex align-items-center navbar-light">
+                <h1 class="nombre-portfolio me-auto"><a href="../../index.html">Bennett Imhoff</a></h1>
+                <a href="../../index.html" class="btn-atras">
+                    <div class="d-flex align-items-center my-auto">
+                        <i class="icono-atras bi bi-arrow-left-circle"></i>
+                        <p class="texto-atras">Atrás</p>
+                    </div>
+                </a>
+            </div>
+        </header>
+    </section>
+
+    <main id="main-proyecto" class="mt-3 d-flex flex-column justify-content-center align-items-center">
+        <div class="dropdown d-flex justify-content-center">
+            <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              Ver todos los proyectos
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="./cv-ben.html">Mi CV virtual</a></li>
+                <li><a class="dropdown-item" href="./coding-of-thrones.html">Coding of Thrones</a></li>
+                <li><a class="dropdown-item" href="./dibujando-mondrian.html">Dibujando a Mondrian</a></li>
+                <li><a class="dropdown-item" href="./libreria-benmar.html">Librería Benmar</a></li>
+                <li><a class="dropdown-item" href="./cv-mari.html">CV Community Manager</a></li>
+                <li><a class="dropdown-item" href="./lista-tareas.html">Lista de Tareas</a></li>
+                <li><a class="dropdown-item" href="#">Correo de Los Simpsons</a></li>
+                <li><a class="dropdown-item" href="./space-scape.html">Space Scape</a></li>
+                <li><a class="dropdown-item" href="./flamingo.html">Flamingo Travel</a></li>
+            </ul>
+        </div>
+        <h1 class="titulo-proyecto pb-1">Correo Los Simpsons</h1>
+        <figure class="d-flex justify-content-center">
+            <img src="../../img/proyectos/miniaturas-proyectos/miniatura-proyecto-7.png" alt="pantalla principal proyecto" class="img-principal-proyecto mt-3">
+        </figure>
+
+        <section id="descripcion-proyecto" class="subseccion">
+            <h2 class="subtitulo-proyecto">Descripción</h2>
+            <p>Este proyecto fue realizado por deseo propio de probar por primera vez algunas validaciones y mensajes temporales simulando un sistema de envío de correos electrónicos sencillo, inspirado en la estética de Los Simpsons. 
+            </p>
+        </section>
+
+        <section id="secciones-proyecto" class="subseccion">
+            <h2 class="subtitulo-proyecto">Secciones</h2>
+            <div class="accordion" id="accordionProyecto">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="btn-acordeon accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Página de inicio
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionProyecto">
+                    <div class="accordion-body d-flex flex-column">
+                        <img class="img-interior-acordeon mx-auto" src="../../img/proyectos/miniaturas-proyectos/miniatura-proyecto-7.png" alt="pagina principal">
+                        La página de inicio nos muestra ya nuestro panel de interacción. Homero nos anima a llenar el formulario con el correo electrónico receptor de nuestro correo, si queremos agregar un segundo correo que reciba una copia, el asunto de nuestro mail y el mensaje que debe contener.<br>
+                        Además, los botones de reseteo y envío de mail se encuentran deshabilitados por no estar completos los campos.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                      <button class="btn-acordeon accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                        Validaciones
+                      </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse hide" aria-labelledby="headingTwo" data-bs-parent="#accordionProyecto">
+                      <div class="accordion-body d-flex flex-column">
+                          <img class="img-interior-acordeon mx-auto" src="../../img/proyectos/proyecto-7/proyecto7-img1.png" alt="validaciones">
+                          Para empezar, todos los campos de nuestro correo son obligatorios. Además, el e-mail y por ende el "CC" deben tener el formato válido de correos electrónicos. De lo contrario, no se habilitarán los botones de envío y reseteo.
+                      </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                      <button class="btn-acordeon accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                        Datos válidos
+                      </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse hide" aria-labelledby="headingThree" data-bs-parent="#accordionProyecto">
+                      <div class="accordion-body d-flex flex-column">
+                          <img class="img-interior-acordeon mx-auto" src="../../img/proyectos/proyecto-7/proyecto7-img2.png" alt="datos validos">
+                          Cuando todas las validaciones fueron pasadas correctamente, los mensajes de error (en caso de haber llegado a mostrarse) desaparecen, y los botones de reseteo y envío se habilitan para ser utilizados.<br>
+                          Si el usuario opta por resetear, volverá a la pantalla principal con los botones deshabilitados y los campos vacíos esperando sus datos.
+                      </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                      <button class="btn-acordeon accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                        Spinner de carga
+                      </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse hide" aria-labelledby="headingFour" data-bs-parent="#accordionProyecto">
+                      <div class="accordion-body d-flex flex-column">
+                          <img class="img-interior-acordeon mx-auto" src="../../img/proyectos/proyecto-7/proyecto7-img3.png" alt="spinner">
+                          Dentro de las pruebas de este proyecto, quise incluir un spinner de carga que le avise al usuario que se está procesando su solicitud de envío cuando el correo es enviado. Le aparece por lo tanto un spinner debajo del formulario haciéndole saber que tiene que esperar unos segundos.
+                      </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFive">
+                      <button class="btn-acordeon accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                        Correo enviado
+                      </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse hide" aria-labelledby="headingFive" data-bs-parent="#accordionProyecto">
+                      <div class="accordion-body d-flex flex-column">
+                          <img class="img-interior-acordeon mx-auto" src="../../img/proyectos/proyecto-7/proyecto7-img4.png" alt="correo enviado">
+                          Una vez que el correo se envió, el spinner desaparece y en su lugar se muestra, por unos segundos, un aviso en verde de que el correo fue enviado exitosamente. Además, podemos observar que los botones de envío y reseteo se deshabilitan nuevamente, como también los campos quedan en blanco mostrando sus placeholders.<br>
+                          De esta manera, al desaparecer el aviso de envío exitoso, el usuario vuelve a encontrarse con la pantalla principal lista para que se envíe un nuevo correo.
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <small>* Este proyecto fue realizado teniendo en cuenta las buenas prácticas del diseño web responsivo.</small>
+        </section>
+
+        <section id="tecnologias-proyecto" class="subseccion d-flex flex-column">
+            <h2 class="subtitulo-proyecto">Tecnologías utilizadas</h2>
+            <ul class="lista-tecnologias">
+                <li><i class="bi bi-caret-right-fill"></i> HTML</li>
+                <li><i class="bi bi-caret-right-fill"></i> CSS</li>
+                <li><i class="bi bi-caret-right-fill"></i> Bootstrap</li>
+                <li><i class="bi bi-caret-right-fill"></i> Javascript</li>
+            </ul>
+        </section>
+
+        <section id="enlace-github" class="subseccion d-flex justify-content-center">
+          <a href="https://github.com/bennett-imhoff/simpsons-mail" target="_blank">
+            <button type="button" class="btn btn-outline-success">Ver el código en GitHub</button>
+          </a>
+        </section>
+    </main>
+
+    <footer class="mt-3 d-flex flex-column align-items-center">
+      <h2 class="titulo-footer">Gracias por visitar mi portfolio</h2>
+      <p class="subtitulo-footer"><em>¿Listo para colaborar juntos en algo genial? <br>¡Contactame para empezar!</em></p>
+      <section class="redes-sociales d-flex mt-3 pt-0">
+          <a href="linkedin.com/in/bennett-imhoff/" class="link-redes-sociales" target="_blank"><i class="bi bi-linkedin"></i></a>
+          <a href="https://github.com/bennett-imhoff" class="link-redes-sociales" target="_blank"><i class="bi bi-github"></i></a>
+          <a href="wa.me/+5492804860295" class="link-redes-sociales" target="_blank"><i class="bi bi-linkedin"></i></a>
+          <a href="https://discord.gg/whf9RTmH" class="link-redes-sociales" target="_blank"><i class="bi bi-discord"></i></a>
+      </section>
+      <p class="made-by">Diseñado por <br><span>María A. Gómez</span> y <span>Bennett Imhoff Anzor</span>.</p>
+  </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+</body>
+</html>

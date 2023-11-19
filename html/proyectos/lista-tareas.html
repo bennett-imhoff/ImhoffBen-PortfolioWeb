@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ben Imhoff - Lista de Tareas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="../../img/iconos-title/lista-tareas.png" rel="icon">
+    <link href="../../css/proyectos.css" rel="stylesheet">
+</head>
+<body>
+    <section id="header" class="fixed-top bg-light">
+        <header class="d-flex align-items-center">
+            <div class="contenedor-barra-superior container d-flex align-items-center navbar-light">
+                <h1 class="nombre-portfolio me-auto"><a href="../../index.html">Bennett Imhoff</a></h1>
+                <a href="../../index.html" class="btn-atras">
+                    <div class="d-flex align-items-center my-auto">
+                        <i class="icono-atras bi bi-arrow-left-circle"></i>
+                        <p class="texto-atras">Atrás</p>
+                    </div>
+                </a>
+            </div>
+        </header>
+    </section>
+
+    <main id="main-proyecto" class="mt-3 d-flex flex-column justify-content-center align-items-center">
+        <div class="dropdown d-flex justify-content-center">
+            <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              Ver todos los proyectos
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="./cv-ben.html">Mi CV virtual</a></li>
+                <li><a class="dropdown-item" href="./coding-of-thrones.html">Coding of Thrones</a></li>
+                <li><a class="dropdown-item" href="./dibujando-mondrian.html">Dibujando a Mondrian</a></li>
+                <li><a class="dropdown-item" href="./libreria-benmar.html">Librería Benmar</a></li>
+                <li><a class="dropdown-item" href="./cv-mari.html">CV Community Manager</a></li>
+                <li><a class="dropdown-item" href="#">Lista de Tareas</a></li>
+                <li><a class="dropdown-item" href="./email-simpsons.html">Correo de Los Simpsons</a></li>
+                <li><a class="dropdown-item" href="./space-scape.html">Space Scape</a></li>
+                <li><a class="dropdown-item" href="./flamingo.html">Flamingo Travel</a></li>
+            </ul>
+        </div>
+        <h1 class="titulo-proyecto pb-1">Lista de Tareas</h1>
+        <figure class="d-flex justify-content-center">
+            <img src="../../img/proyectos/miniaturas-proyectos/miniatura-proyecto-6.png" alt="pantalla principal proyecto" class="img-principal-proyecto mt-3">
+        </figure>
+
+        <section id="descripcion-proyecto" class="subseccion">
+            <h2 class="subtitulo-proyecto">Descripción</h2>
+            <p>Este proyecto esta realizado en el marco del Bootcamp de Argentina Programa para ser Full Stack Web Developer. Allí, aprendí a hacer aplicaciones con Angular, y una de las aplicaciones que desarrollé como práctica fue esta lista de tareas.
+            </p>
+        </section>
+
+        <section id="secciones-proyecto" class="subseccion">
+            <h2 class="subtitulo-proyecto">Secciones</h2>
+            <div class="accordion" id="accordionProyecto">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="btn-acordeon accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Página de inicio
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionProyecto">
+                    <div class="accordion-body d-flex flex-column">
+                        <img class="img-interior-acordeon mx-auto" src="../../img/proyectos/miniaturas-proyectos/miniatura-proyecto-6.png" alt="pagina principal">
+                        Al iniciar la aplicación, podemos ver nuestra aplicación ya funcional. Se carga por el momento con las tareas que yo le haya dejado mockeadas en un <em>json server</em>, pero puede ser modificado por el usuario de la lista de tareas.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                      <button class="btn-acordeon accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                        Lista limpia
+                      </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse hide" aria-labelledby="headingTwo" data-bs-parent="#accordionProyecto">
+                      <div class="accordion-body d-flex flex-column">
+                          <img class="img-interior-acordeon mx-auto" src="../../img/proyectos/proyecto-6/proyecto6-img1.png" alt="lista limpia">
+                          Si no tenemos ninguna tarea en nuestra lista, se ve simplemente este panel general. En él, un input nos invita con su placeholder a escribri qué tenemos que hacer, mientras que un segundo input nos invita a escribir cuándo lo haremos.<br>
+                          Además, podemos utilizar el checkbox para marcar si esa tarea es importante o no antes de apretar en "Save Task" para guardarla.
+                      </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                      <button class="btn-acordeon accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                        Interactuando con las tareas
+                      </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse hide" aria-labelledby="headingThree" data-bs-parent="#accordionProyecto">
+                      <div class="accordion-body d-flex flex-column">
+                          <img class="img-interior-acordeon mx-auto" src="../../img/proyectos/proyecto-6/proyecto6-img2.png" alt="interaccion tareas">
+                          Una vez creadas las tareas, el usuario podrá clickearla o desclickearla para que figure con un borde izquierdo de color anaranjado, que significa que fue marcada (o no) como una tarea importante. También podrá eliminarla con la cruz roja que aparece a la derecha de cada tarea correspondiente.
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="tecnologias-proyecto" class="subseccion d-flex flex-column">
+            <h2 class="subtitulo-proyecto">Tecnologías utilizadas</h2>
+            <ul class="lista-tecnologias">
+                <li><i class="bi bi-caret-right-fill"></i> Angular</li>
+                <li><i class="bi bi-caret-right-fill"></i> HTML</li>
+                <li><i class="bi bi-caret-right-fill"></i> CSS</li>
+                <li><i class="bi bi-caret-right-fill"></i> Typescript</li>
+                <li><i class="bi bi-caret-right-fill"></i> JSON Server</li>
+            </ul>
+        </section>
+
+        <section id="enlace-github" class="subseccion d-flex justify-content-center">
+            <a href="https://github.com/bennett-imhoff/simple-task-list" target="_blank">
+              <button type="button" class="btn btn-outline-success">Ver el código en GitHub</button>
+            </a>
+          </section>
+    </main>
+
+    <footer class="mt-3 d-flex flex-column align-items-center">
+      <h2 class="titulo-footer">Gracias por visitar mi portfolio</h2>
+      <p class="subtitulo-footer"><em>¿Listo para colaborar juntos en algo genial? <br>¡Contactame para empezar!</em></p>
+      <section class="redes-sociales d-flex mt-3 pt-0">
+          <a href="linkedin.com/in/bennett-imhoff/" class="link-redes-sociales" target="_blank"><i class="bi bi-linkedin"></i></a>
+          <a href="https://github.com/bennett-imhoff" class="link-redes-sociales" target="_blank"><i class="bi bi-github"></i></a>
+          <a href="wa.me/+5492804860295" class="link-redes-sociales" target="_blank"><i class="bi bi-linkedin"></i></a>
+          <a href="https://discord.gg/whf9RTmH" class="link-redes-sociales" target="_blank"><i class="bi bi-discord"></i></a>
+      </section>
+      <p class="made-by">Diseñado por <br><span>María A. Gómez</span> y <span>Bennett Imhoff Anzor</span>.</p>
+  </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+</body>
+</html>

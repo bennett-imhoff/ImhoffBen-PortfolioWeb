@@ -1,0 +1,310 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;800&display=swap');
+
+@keyframes animateText {
+    0%{
+        color:transparent;
+    }
+    100%{
+        color:rgb(46, 46, 46);
+    }
+}
+
+.nombre-portfolio a{
+    font-family: 'Raleway';
+    font-size: 25px;
+    font-weight: bolder;
+    color: #5cb874;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.btn-atras{
+    color:black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.texto-atras, .icono-atras{
+    font-family: 'Open Sans';
+    font-size:14px;
+    margin:0 3px;
+}
+
+.dropdown{
+    margin-top:60px;
+    margin-bottom:30px;
+}
+
+.dropdown .btn{
+    font-size:14px;
+}
+
+.dropdown-menu{
+    border: 1px solid green;
+    border-top:none;
+}
+
+.titulo-proyecto, .subtitulo-proyecto{
+    font-family: 'Raleway';
+    font-weight: bolder;
+    color:transparent;
+    text-transform: uppercase;
+    width:fit-content;
+    border-bottom:2px solid #5cb874;
+    animation: animateText 2s linear forwards;
+}
+
+.img-principal-proyecto{
+    width:90%;
+}
+
+.subseccion{
+    width:100%;
+    padding:10px 20px !important;
+}
+
+.subseccion p{
+    font-family: 'Open Sans';
+}
+
+.subtitulo-proyecto{
+    font-size:20px;
+    padding-bottom:5px;
+}
+
+.accordion{
+    font-family: 'Open Sans';
+    margin-top: 20px;
+    margin-bottom:20px;
+}
+
+
+.accordion-button:not(.collapsed){
+    color:black;
+    background-color:white;
+}
+
+.btn-acordeon{
+    font-weight: bold;
+}
+
+.btn-acordeon:focus{
+    box-shadow: none;
+}
+
+.img-interior-acordeon{
+    width:90%;
+    margin-bottom:10px;
+}
+
+small{
+    font-size:12px;
+    line-height: 0.5;
+    margin-bottom:10px;
+}
+
+.lista-tecnologias{
+    padding:0;
+    margin-top:10px;
+    margin-left:10px;
+}
+
+.lista-tecnologias li{
+    list-style: none;
+}
+
+.lista-tecnologias .bi{
+    color:#5cb874;
+}
+
+footer{
+    background-color: black;
+    padding-top:30px;
+}
+
+.titulo-footer, .subtitulo-footer{
+    color:white;
+    text-align: center;
+}
+
+.titulo-footer{
+    font-family: 'Raleway';
+    font-size:20px;
+    font-weight: bold;
+}
+
+.subtitulo-footer{
+    font-family:'Open Sans';
+    font-size:15px;
+    line-height: 1.5;
+    width:90%;
+}
+
+.link-redes-sociales{
+    text-decoration: none;
+    padding-bottom:20px;
+    cursor: pointer;
+}
+
+.link-redes-sociales .bi{
+    font-size:25px;
+    color:white;
+    background-color: #5cb874;
+    padding: 5px 10px;
+    margin:0 10px;
+    border-radius: 50%;
+}
+
+.link-redes-sociales .bi:hover{
+    background-color: #266938;
+}
+
+.made-by{
+    font-family: 'Open Sans';
+    font-size:12px;
+    color:white;
+    text-align: center;
+}
+
+.made-by span{
+    color:#5cb874;
+}
+
+/**********************************************
+*   DISPOSITIVOS GRANDES, DESDE 720 HASTA 991
+***********************************************/
+@media screen and (min-width:720px) {
+    .contenedor-barra-superior {
+        max-width: 100%;
+        margin-top: 10px;
+    }
+
+    .nombre-portfolio {
+        margin-left: 3%;
+    }
+
+    .titulo-footer{
+        font-size:30px;
+        margin-top:40px;
+    }
+
+    .subtitulo-footer{
+        font-size:20px;
+    }
+
+    .link-redes-sociales .bi{
+        font-size:35px;
+        margin:0 20px;
+    }
+
+    .made-by{
+        font-size:16px;
+        margin-top:35px;
+    }
+}
+
+/**********************************************
+*   TABLES PEQUEÑAS, DESDE 992px HASTA 1365px
+***********************************************/
+@media screen and (min-width:992px) {
+    .contenedor-barra-superior {
+        margin-top: 0;
+    }
+
+    .nombre-portfolio {
+        margin-left: 1%;
+    }
+
+    .nombre-portfolio a {
+        font-size: 25px;
+    }
+
+    .subseccion{
+        padding:10px 50px !important;
+    }
+}
+
+/**********************************************
+*   ORDENADOR PORTATIL, DESDE 1366px HASTA 1919
+***********************************************/
+@media screen and (min-width:1366px) {
+    main{
+        line-height: 2;
+    }
+
+    .img-principal-proyecto{
+        width:85%;
+    }
+
+    .subseccion{
+        padding:10px 100px !important;
+    }
+
+    .subseccion p, .btn-acordeon, .accordion-body, .texto-atras, .icono-atras, .dropdown .btn{
+        font-size:18px;
+    }
+
+    .texto-atras{
+        margin:15px;
+    }
+    
+    .subtitulo-proyecto{
+        font-size:25px;
+        margin:30px 0;
+    }
+
+    small{
+        font-size:15px;
+    }
+}
+
+/**********************************************
+*   PC GRANDE., DESDE 1920px EN ADELANTE
+***********************************************/
+@media screen and (min-width:1920px) {
+    .contenedor-barra-superior{
+        max-width:100vw;
+    }
+    .nombre-portfolio {
+        margin: 0 2% !important;
+    }
+
+    .nombre-portfolio a {
+        font-size: 35px;
+    }
+
+    .btn-atras{
+        margin-left:1400px;
+    }
+
+    .img-principal-proyecto{
+        width:100%;
+    }
+
+    .subseccion{
+        padding:10px 150px !important;
+    }
+
+    .subseccion p, .btn-acordeon, .accordion-body, .texto-atras, .icono-atras, .dropdown .btn{
+        font-size:20px;
+    }
+
+    .texto-atras{
+        margin:15px;
+    }
+    
+    .subtitulo-proyecto{
+        font-size:30px;
+        margin:30px 0;
+    }
+
+    small{
+        font-size:16px;
+    }
+
+    .img-interior-acordeon{
+        width: 70%;
+    }
+}

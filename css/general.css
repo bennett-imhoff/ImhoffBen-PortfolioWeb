@@ -1,0 +1,371 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;800&display=swap');
+
+/* KEYFRAMES */
+@keyframes fadeInDown {
+    from {
+        opacity: 0.1;
+        transform: translateY(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0.1;
+        transform: translateY(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/**********************************************
+*   DISPOSITIVOS MÓVILES, HASTA 719px INCLUIDOS
+***********************************************/
+
+html{
+    scroll-behavior: smooth;
+}
+
+.nombre-portfolio a,
+.titulo-menu-desplegado {
+    font-family: 'Raleway';
+    font-size: 25px;
+    font-weight: bolder;
+    color: #5cb874;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.titulo-menu-desplegado {
+    font-size: 20px;
+}
+
+.carousel-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.fondo-semi-transparente::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #3d8f53;
+    opacity: 0.65;
+    z-index: 1;
+}
+
+.contenedor-datos-carrusel {
+    position: relative;
+    height: 80%;
+    margin: 10% 12%;
+    z-index: 2;
+}
+
+.link-descripcion{
+    text-decoration: none;
+}
+
+.titulo-item-carrusel, .texto-item-carrusel {
+    color: white;
+    font-family: 'Raleway';
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+}
+
+.titulo-item-carrusel{
+    animation: fadeInDown 2s ease forwards;
+    cursor:pointer;
+}
+
+.texto-item-carrusel {
+    font-family: 'Open Sans';
+    font-size:20px;
+    font-weight: 400;
+    animation: fadeInUp 2s ease forwards;
+}
+
+.divider{
+    color:#3d8f53;
+    opacity:0.5;
+    width: 60%;
+    margin: 20px auto;
+}
+
+iframe{
+    width: 100%;
+    padding:0 15px;
+}
+
+.datos{
+    margin-top:20px;
+}
+
+.icono-contacto{
+    text-align: center;
+    font-size:23px;
+    color:#5cb874;
+    background-color: rgb(229, 229, 229);
+    min-width:45px;
+    height:45px;
+    padding:5px;
+    border-radius: 50%;;
+    cursor: pointer;
+}
+
+.titulo-contacto{
+    font-family: 'Raleway';
+    font-size:20px;
+    font-weight: bold;
+}
+
+.texto-contacto{
+    font-family: 'Open Sans';
+    font-size:16px;
+}
+
+.icono-contacto:hover{
+    color:rgb(229, 229, 229);
+    background-color: #5cb874;
+}
+
+footer{
+    background-color: black;
+    padding-top:30px;
+}
+
+.titulo-footer, .subtitulo-footer{
+    color:white;
+    text-align: center;
+}
+
+.titulo-footer{
+    font-family: 'Raleway';
+    font-size:20px;
+    font-weight: bold;
+}
+
+.subtitulo-footer{
+    font-family:'Open Sans';
+    font-size:15px;
+    line-height: 1.5;
+    width:90%;
+}
+
+.link-redes-sociales{
+    padding-bottom:20px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.link-redes-sociales .bi{
+    font-size:25px;
+    color:white;
+    background-color: #5cb874;
+    padding: 5px 10px;
+    margin:0 10px;
+    border-radius: 50%;
+}
+
+.link-redes-sociales .bi:hover{
+    background-color: #266938;
+}
+
+.made-by{
+    font-family: 'Open Sans';
+    font-size:12px;
+    text-align: center;
+    color:white;
+}
+
+.made-by span{
+    color:#5cb874;
+}
+
+/**********************************************
+*   DISPOSITIVOS GRANDES, DESDE 720 HASTA 991
+***********************************************/
+@media screen and (min-width:720px) {
+    .contenedor-barra-superior {
+        max-width: 100%;
+        margin-top: 10px;
+    }
+
+    .nombre-portfolio {
+        margin-left: 3%;
+    }
+
+    .nombre-portfolio a,
+    .titulo-menu-desplegado {
+        font-size: 40px;
+    }
+
+    .titulo-menu-desplegado {
+        font-size: 35px;
+    }
+
+    .nav-item,
+    .dropdown-item {
+        font-size: 25px;
+    }
+
+    .contenedor-datos-carrusel {
+        margin: 10% 15%;
+    }
+    
+    .titulo-item-carrusel{
+        font-size: 55px;
+    }
+    
+    .texto-item-carrusel {
+        font-size:40px;
+    }
+    
+    .datos{
+        margin:auto;
+        margin-top:40px;
+    }
+    
+    .icono-contacto{
+        font-size:30px;
+        height:60px;
+        min-width:60px;
+        margin-right:20px;
+    }
+    
+    .titulo-contacto{
+        font-size:25px;
+    }
+    
+    .texto-contacto{
+        font-size:20px;
+    }
+
+    .titulo-footer{
+        font-size:30px;
+        margin-top:40px;
+    }
+
+    .subtitulo-footer{
+        font-size:20px;
+    }
+
+    .link-redes-sociales .bi{
+        font-size:35px;
+        margin:0 20px;
+    }
+
+    .made-by{
+        font-size:16px;
+        margin-top:35px;
+    }
+}
+
+/**********************************************
+*   TABLES PEQUEÑAS, DESDE 992px HASTA 1365px
+***********************************************/
+@media screen and (min-width:992px) {
+    .contenedor-barra-superior {
+        margin-top: 0;
+    }
+
+    .contenedor-navbar-escritorio .navbar-nav {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto auto;
+    }
+
+    .contenedor-navbar-escritorio .navbar-nav .nav-item {
+        width: max-content !important;
+    }
+
+    .nombre-portfolio {
+        margin-left: 1%;
+    }
+
+    .nombre-portfolio a {
+        font-size: 25px;
+    }
+
+    .barra-navegacion .nav-item {
+        margin: 0 20px;
+    }
+
+    .nav-item,
+    .dropdown-item {
+        font-size: 20px;
+    }
+
+    iframe{
+        margin-top:40px;
+    }
+}
+
+/**********************************************
+*   ORDENADOR PORTATIL, DESDE 1366px HASTA 1919
+***********************************************/
+@media screen and (min-width:1366px) {
+    .contenedor-navbar-escritorio .navbar-nav {
+        display: flex;
+    }
+    
+    .contenedor-datos-carrusel{
+        margin-top:5%;
+    }
+    
+    .titulo-item-carrusel{
+        font-size: 45px;
+    }
+    
+    .texto-item-carrusel {
+        font-size:25px;
+    }
+
+    .divider{
+        margin: 40px auto;
+    }
+
+    iframe{
+        margin-top:20px;
+    }
+}
+
+/**********************************************
+*   PC GRANDE., DESDE 1920px EN ADELANTE
+***********************************************/
+@media screen and (min-width:1920px) {
+    .nombre-portfolio {
+        margin: 0 2% !important;
+    }
+
+    .nombre-portfolio a {
+        font-size: 35px;
+    }
+
+    .barra-navegacion .nav-item {
+        margin: 0 40px;
+    }
+    
+    .titulo-item-carrusel{
+        font-size: 55px;
+    }
+    
+    .texto-item-carrusel {
+        font-size:35px;
+    }
+
+    #contacto .contenedor-interno{
+        margin-top:30px !important;
+    }
+}

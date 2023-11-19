@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bennett Imhoff - Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/general.css">
+    <link rel="stylesheet" href="./css/ofrezco.css">
+    <link rel="stylesheet" href="./css/secciones.css">
+    <link rel="stylesheet" href="./css/trabajos-estudios.css">
+    <link href="img/iconos-title/icono-portfolio.png" rel="icon">
+</head>
+
+<body>
+    <section id="header" class="fixed-top bg-light">
+        <header class="d-flex align-items-center">
+            <div class="contenedor-barra-superior container d-flex align-items-center">
+                <h1 class="nombre-portfolio me-auto"><a href="index.html">Bennett Imhoff</a></h1>
+                <nav class="barra-navegacion navbar navbar-expand-lg navbar-light">
+                    <!-- Contenido para pantallas de escritorio -->
+                    <div class="contenedor-navbar-escritorio container-fluid">
+                        <div class="d-none d-lg-block">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#descripcion">Inicio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#sobre-mi">Sobre mí</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#proyectos">Proyectos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#habilidades">Habilidades</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#experiencia-laboral">Trabajo</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#educacion">Educación</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#contacto">Contacto</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Botón para activar el offcanvas en dispositivos móviles -->
+                        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+
+                    <!-- Contenido para dispositivos móviles -->
+                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="titulo-menu-desplegado offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <!-- Contenido de la barra de navegación -->
+                            <ul class="navbar-nav d-lg-none">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#descripcion"
+                                        data-bs-dismiss="offcanvas">Inicio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#sobre-mi" data-bs-dismiss="offcanvas">Sobre mí</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#proyectos" data-bs-dismiss="offcanvas">Proyectos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#habilidades" data-bs-dismiss="offcanvas">Habilidades</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#experiencia-laboral"
+                                        data-bs-dismiss="offcanvas">Experiencia laboral</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#educacion" data-bs-dismiss="offcanvas">Educación</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#contacto" data-bs-dismiss="offcanvas">Contacto</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+    </section>
+    <main>
+        <section id="descripcion">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active"
+                        style="background: url('./img/slide-1.jpg') center/cover no-repeat; width: 100%; height: 75vh;">
+                        <div class="fondo-semi-transparente"></div>
+                        <div class="contenedor-datos-carrusel d-flex justify-content-center flex-column">
+                            <a class="link-descripcion" href="#descripcion-soy">
+                                <h2 class="titulo-item-carrusel">Soy</h2>
+                            </a>
+                            <p class="texto-item-carrusel">Apasionado por crear experiencias web únicas y funcionales.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item"
+                        style="background: url('./img/slide-2.jpg') center/cover no-repeat; width: 100%; height: 75vh;">
+                        <div class="fondo-semi-transparente"></div>
+                        <div class="contenedor-datos-carrusel d-flex justify-content-center flex-column">
+                            <a class="link-descripcion" href="#descripcion-quiero">
+                                <h2 class="titulo-item-carrusel">Quiero</h2>
+                            </a>
+                            <p class="texto-item-carrusel">Experticia en desarrollar soluciones digitales innovadoras.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item"
+                        style="background: url('./img/slide-3.jpg') center/cover no-repeat; width: 100%; height: 75vh;">
+                        <div class="fondo-semi-transparente"></div>
+                        <div class="contenedor-datos-carrusel d-flex justify-content-center flex-column">
+                            <a class="link-descripcion" href="#descripcion-hago">
+                                <h2 class="titulo-item-carrusel">Hago</h2>
+                            </a>
+                            <p class="texto-item-carrusel">Combinaciones de diseño y código para dar vida a ideas
+                                creativas.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+        <article id="ofrezco">
+            <div class="container contenedor-ofrezco">
+                <div class="row">
+                    <div class="col-lg-4 col-12 item-ofrezco">
+                        <div class="contenedor-icono">
+                            <i class="bi bi-pencil"></i>
+                        </div>
+                        <h4 class="titulo-ofrezco">Diseño impactante</h4>
+                        <p class="texto-ofrezco">Consigue un diseño web que destaque, atractivo y funcional, que no solo
+                            atraiga usuarios sino también los mantenga interesados.</p>
+                    </div>
+                    <div class="col-lg-4 col-12 item-ofrezco">
+                        <div class="contenedor-icono">
+                            <i class="bi bi-bar-chart-line"></i>
+                        </div>
+                        <h4 class="titulo-ofrezco">Relevancia</h4>
+                        <p class="texto-ofrezco">Optimiza tu sitio para una mejor visibilidad. Mejora el rendimiento y
+                            atrae
+                            más tráfico con mi equipo.</p>
+                    </div>
+                    <div class="col-lg-4 col-12 item-ofrezco">
+                        <div class="contenedor-icono">
+                            <i class="bi bi-palette"></i>
+                        </div>
+                        <h4 class="titulo-ofrezco">Enfoque personalizado</h4>
+                        <p class="texto-ofrezco">Obtén un sitio web que se adapte a tus necesidades, objetivos y estilo.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <hr class="divider">
+
+        <section id="sobre-mi">
+            <h2 class="titulo-seccion">Sobre mí</h2>
+            <div class="texto-sobre-mi">
+                <input type="checkbox" id="ver-mas" class="ver-mas-check d-none">
+                <p class="texto-corto">Mi fascinación es el mundo del desarrollo de software. Desde adolescente tuve la
+                    suerte de que me enseñen qué era HTML y cómo se relacionaba al mundo de la programación web.</p>
+                <p class="texto-largo">
+                    Por mi cuenta indagué en su manejo, aprendí qué era CSS y cómo se complementaban y empecé a maquetar
+                    páginas web. <br>De adulto, decidí formarme como Full Stack, haciendo un bootcamp que, usando
+                    Angular como Framework, me hizo aprender Java, Spring Boot, Typescript, MySQL, como también
+                    habilidades blandas como SCRUM. <br>Siguiendo en mi camino de capacitaciones, conocí gente
+                    maravillosa y pude tomar mi primer trabajo IT como Desarrollador Java.<br>A partir de allí, comencé
+                    mi actual formación como Diseñador Web, tomando un curso al respecto y desarrollando mis primeros
+                    proyectos.
+                </p>
+                <h3 id="descripcion-soy" class="subtitulo-sobre-mi texto-largo">Soy</h3>
+                <p class="texto-largo">¿Quién soy entonces? Soy Ben, un hombre trans ariano bastante inquieto. Me gusta
+                    estar aprendiendo algo nuevo todos los días, practicar, desarrollar proyectos, y encontrar gente que
+                    esté inmersa en el mundo IT también.</p>
+                <h3 id="descripcion-quiero" class="subtitulo-sobre-mi texto-largo">Quiero</h3>
+                <p class="texto-largo">El qué quiero es una pregunta muy capciosa. En mi desarrollo como profesional,
+                    quiero seguir adquiriendo experiencia y conocimientos. Pero no les voy a mentir, también quiero
+                    pasar mis fines de semana con mi pareja y mis gatitos, visitar a mis hermanos, ver muchas series, y
+                    leer. ¡Me encanta leer!</p>
+                <h3 id="descripcion-hago" class="subtitulo-sobre-mi texto-largo">Hago</h3>
+                <p class="texto-largo">Además de hacer proyectos apuntando a un buen diseño con código funcional,
+                    ¡también hago música! Soy pianista, así que cuando suelto las teclas de la notebook, me paso a las
+                    teclas del instrumento. También me gusta mucho cantar, por lo que canto en un coro.</p>
+                <p class="texto-largo texto-agradecimiento">¡Gracias por tomarte el tiempo de leerme! Si querés charlar,
+                    ¡contactame cuando quieras!</p>
+                <label for="ver-mas" class="ver-mas-label"></label>
+            </div>
+        </section>
+
+        <hr class="divider">
+
+        <section id="proyectos">
+            <h2 class="titulo-seccion">Proyectos</h2>
+            <article class="contenedor-proyectos">
+                <div class="resumen-proyecto card">
+                    <img src="./img/proyectos/miniaturas-proyectos/miniatura-proyecto-1.png"
+                        class="img-proyecto-card card-img-top" alt="proyecto curriculum ben">
+                    <div class="card-body">
+                        <h5 class="titulo-proyecto-card card-title">Mi CV virtual</h5>
+                        <p class="texto-proyecto-card card-text">El primer CV virtual que hice utilizando solo HTML, CSS
+                            y Bootstrap. ¡Probando mis primeros pasos!</p>
+                        <a href="./html/proyectos/cv-ben.html" class="btn btn-success d-flex justify-content-center">Ver
+                            más detalles</a>
+                    </div>
+                </div>
+                <div class="resumen-proyecto card">
+                    <img src="./img/proyectos/miniaturas-proyectos/miniatura-proyecto-2.png"
+                        class="img-proyecto-card card-img-top" alt="proyecto coding of thrones">
+                    <div class="card-body">
+                        <h5 class="titulo-proyecto-card card-title">Coding of Thrones</h5>
+                        <p class="texto-proyecto-card card-text">Una página web que simula ofrecer cursos virtuales de
+                            programación en distintos lenguajes.</p>
+                        <a href="./html/proyectos/coding-of-thrones.html"
+                            class="btn btn-success d-flex justify-content-center">Ver más detalles</a>
+                    </div>
+                </div>
+                <div class="resumen-proyecto card">
+                    <img src="./img/proyectos/miniaturas-proyectos/miniatura-proyecto-3.png"
+                        class="img-proyecto-card card-img-top" alt="proyecto mondrian">
+                    <div class="card-body">
+                        <h5 class="titulo-proyecto-card card-title">Dibujando a Mondrian</h5>
+                        <p class="texto-proyecto-card card-text">Un proyecto interactivo realizado en Processing basado
+                            en la obra y paleta de colores del pintor Mondrian.</p>
+                        <a href="./html/proyectos/dibujando-mondrian.html"
+                            class="btn btn-success d-flex justify-content-center">Ver más detalles</a>
+                    </div>
+                </div>
+                <div class="resumen-proyecto card">
+                    <img src="./img/proyectos/miniaturas-proyectos/miniatura-proyecto-4.png"
+                        class="img-proyecto-card card-img-top" alt="proyecto libreria">
+                    <div class="card-body">
+                        <h5 class="titulo-proyecto-card card-title">Librería Benmar</h5>
+                        <p class="texto-proyecto-card card-text">Una página web que simula ser una librería online,
+                            donde podés agregar productos en tu carrito, eliminarlos, vaciarlo o concretar tu compra.
+                        </p>
+                        <a href="./html/proyectos/libreria-benmar.html"
+                            class="btn btn-success d-flex justify-content-center">Ver más detalles</a>
+                    </div>
+                </div>
+                <div class="resumen-proyecto card">
+                    <img src="./img/proyectos/miniaturas-proyectos/miniatura-proyecto-5.png"
+                        class="img-proyecto-card card-img-top" alt="proyecto cv mari">
+                    <div class="card-body">
+                        <h5 class="titulo-proyecto-card card-title">CV Community Manager</h5>
+                        <p class="texto-proyecto-card card-text">Probando cómo es modificar proyectos antiguos, hice una
+                            adaptación de mi primer CV virtual con los datos de mi pareja, Community Manager.</p>
+                        <a href="./html/proyectos/cv-mari.html"
+                            class="btn btn-success d-flex justify-content-center">Ver más detalles</a>
+                    </div>
+                </div>
+                <div class="resumen-proyecto card">
+                    <img src="./img/proyectos/miniaturas-proyectos/miniatura-proyecto-6.png"
+                        class="img-proyecto-card card-img-top" alt="proyecto lista de tareas">
+                    <div class="card-body">
+                        <h5 class="titulo-proyecto-card card-title">Lista de Tareas</h5>
+                        <p class="texto-proyecto-card card-text">Probando algunas cosas en Angular, este proyecto simula
+                            ser un administrador de lista de tareas, para agregar, eliminar, y marcar como importantes.
+                        </p>
+                        <a href="./html/proyectos/lista-tareas.html"
+                            class="btn btn-success d-flex justify-content-center">Ver más detalles</a>
+                    </div>
+                </div>
+                <div class="resumen-proyecto card">
+                    <img src="./img/proyectos/miniaturas-proyectos/miniatura-proyecto-7.png"
+                        class="img-proyecto-card card-img-top" alt="proyecto email">
+                    <div class="card-body">
+                        <h5 class="titulo-proyecto-card card-title">Correo de Los Simpsons</h5>
+                        <p class="texto-proyecto-card card-text">Esta página web es un simulador de envío de emails con
+                            la estética de Los Simpsons.</p>
+                        <a href="./html/proyectos/email-simpsons.html"
+                            class="btn btn-success d-flex justify-content-center">Ver más detalles</a>
+                    </div>
+                </div>
+                <div class="resumen-proyecto card">
+                    <img src="./img/proyectos/miniaturas-proyectos/miniatura-proyecto-8.png"
+                        class="img-proyecto-card card-img-top" alt="proyecto juego espacial">
+                    <div class="card-body">
+                        <h5 class="titulo-proyecto-card card-title">Space Scape</h5>
+                        <p class="texto-proyecto-card card-text">Este divertido juego realizado en Processing te hará
+                            elegir una nave y buscar combustible mientras esquivas marcianos.</p>
+                        <a href="./html/proyectos/space-scape.html"
+                            class="btn btn-success d-flex justify-content-center">Ver más detalles</a>
+                    </div>
+                </div>
+                <div class="resumen-proyecto card">
+                    <img src="./img/proyectos/miniaturas-proyectos/miniatura-proyecto-9.png"
+                        class="img-proyecto-card card-img-top" alt="proyecto agencia">
+                    <div class="card-body">
+                        <h5 class="titulo-proyecto-card card-title">Flamingo Travel</h5>
+                        <p class="texto-proyecto-card card-text">Esta página web es un simulador de formulario de
+                            contacto de parte de una agencia de viajes.</p>
+                        <a href="./html/proyectos/flamingo.html"
+                            class="btn btn-success d-flex justify-content-center">Ver más detalles</a>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <hr class="divider">
+
+        <section id="habilidades">
+            <h2 class="titulo-seccion no-transform">Habilidades</h2>
+            <article class="contenedor-categorias">
+                <div class="categoria-habilidad card d-flex flex-column align-items-center">
+                    <i class="img-categoria bi bi-code" style="color:#aa9bdf"></i>
+                    <div class="cuerpo-categoria card-body d-flex flex-column align-items-center">
+                        <h5 class="titulo-categoria card-title">Desarrollo</h5>
+                        <p class="texto-categoria card-text">Explora mis habilidades en distintos lenguajes, frameworks,
+                            librerías, bases de datos y control de versiones.</p>
+                        <a href="./html/habilidades/desarrollo.html" class="btn-categoria btn">Explorar</a>
+                    </div>
+                </div>
+                <div class="categoria-habilidad card d-flex flex-column align-items-center">
+                    <i class="img-categoria bi bi-brush" style="color:#e9ae87"></i>
+                    <div class="cuerpo-categoria card-body d-flex flex-column align-items-center">
+                        <h5 class="titulo-categoria card-title">Diseño</h5>
+                        <p class="texto-categoria card-text">Enterate de las habilidades que tengo en materia de diseño
+                            web, gráfico y diseño responsivo.</p>
+                        <a href="./html/habilidades/diseño.html" class="btn-categoria btn">Explorar</a>
+                    </div>
+                </div>
+                <div class="categoria-habilidad card d-flex flex-column align-items-center">
+                    <i class="img-categoria bi bi-kanban" style="color:rgb(116, 167, 245)"></i>
+                    <div class="cuerpo-categoria card-body d-flex flex-column align-items-center">
+                        <h5 class="titulo-categoria card-title">Gestión de proyectos</h5>
+                        <p class="texto-categoria card-text">Indaga en mi experiencia con distintas metodologías y
+                            herramientas de gestión, colaboración y comunicación.</p>
+                        <a href="./html/habilidades/gestion.html" class="btn-categoria btn">Explorar</a>
+                    </div>
+                </div>
+                <div class="categoria-habilidad card d-flex flex-column align-items-center">
+                    <i class="img-categoria bi bi-chat-dots" style="color:rgb(241, 141, 141)"></i>
+                    <div class="cuerpo-categoria card-body d-flex flex-column align-items-center">
+                        <h5 class="titulo-categoria card-title">Relevantes</h5>
+                        <p class="texto-categoria card-text">Además, me gustaría contarte sobre mis habilidades
+                            interpersonales y los idiomas con los que me desenvuelvo.</p>
+                        <a href="./html/habilidades/otras-habilidades.html" class="btn-categoria btn">Explorar</a>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <hr class="divider">
+
+        <section id="experiencia-laboral">
+            <h2 class="titulo-seccion no-transform">Experiencia laboral</h2>
+            <article class="contenedor-interno container mt-5">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-4">
+                        <div class="row m-0">
+                            <aside class="col-3">
+                                <img class="img-icono" src="./img/trabajo-estudios/icon-trabajo-java.png"
+                                    alt="connectis">
+                            </aside>
+                            <article class="detalles col-9">
+                                <p>
+                                    <strong class="titulo-item">Desarrollador Java</strong>
+                                    <br>
+                                    <strong><span class="texto-oscuro">Connectis</span>, consultora que ofrece servicios
+                                        tecnológicos seguros, flexibles y fiables.</strong>
+                                    <br>
+                                    Julio 2022 - Presente
+                                <ul>
+                                    <li>
+                                        <u>Mantenimiento</u> y <u>desarrollo</u> de componentes para la intranet de
+                                        Movistar, para la web de Movistar Argentina, y como <u>soporte</u> de proyectos
+                                        internos de la empresa.
+                                    </li>
+                                    <li>
+                                        Liferay (portlets y webcontents), frontend (Vue.JS, HTML, CSS, Freemarker) y
+                                        backend (Java, Spring, SQL).
+                                    </li>
+                                </ul>
+                                </p>
+                            </article>
+                        </div>
+                    </div>
+                    <hr class="divider d-md-none">
+                    <div class="col-12 col-lg-4">
+                        <div class="row m-0">
+                            <aside class="col-3">
+                                <img class="img-icono" src="./img/trabajo-estudios/icon-trabajo-diseño.png"
+                                    alt="freelancer">
+                            </aside>
+                            <article class="detalles col-9">
+                                <p>
+                                    <strong class="titulo-item">Diseñador de Web Pages</strong>
+                                    <br>
+                                    <strong><span class="texto-claro">Freelancer</span></strong>
+                                    <br>
+                                    Noviembre 2020 - Presente
+                                <ul>
+                                    <li>
+                                        Maquetación o diseño de páginas web, trabajando con HTML, CSS, Bootstrap y
+                                        Javascript.
+                                    </li>
+                                </ul>
+                                </p>
+                            </article>
+                        </div>
+                    </div>
+                    <hr class="divider d-md-none">
+                    <div class="col-12 col-lg-4">
+                        <div class="row m-0">
+                            <aside class="col-3">
+                                <img class="img-icono" src="./img/trabajo-estudios/icon-trabajo-mantenimiento.png"
+                                    alt="soporte">
+                            </aside>
+                            <article class="detalles col-9">
+                                <p>
+                                    <strong class="titulo-item">Mantenimiento WooCommerce</strong>
+                                    <br>
+                                    <strong><span class="texto-oscuro">SyF Calzados</span>, mayorista de calzados cuya
+                                        página web se orientaba a sus revendedores.</strong>
+                                    <br>
+                                    Marzo 2022 - Agosto 2022
+                                <ul>
+                                    <li>
+                                        Mantenimiento de la página web utilizando WooCommerce para potenciar sus
+                                        funcionalidades.
+                                    </li>
+                                    <li>
+                                        PHP y plugins de WooCommerce.
+                                    </li>
+                                </ul>
+                                </p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <hr class="divider">
+
+        <section id="educacion">
+            <h2 class="titulo-seccion no-transform">Educación</h2>
+            <article class="contenedor-interno container mt-5">
+                <div class="row justify-content-center">
+                    <div class="columna-estudio col-12 col-lg-4">
+                        <div class="row m-0">
+                            <aside class="col-3">
+                                <img class="img-icono" src="./img/trabajo-estudios/icon-estudio-diseño.png"
+                                    alt="diseño">
+                            </aside>
+                            <article class="detalles col-9">
+                                <p>
+                                    <strong class="titulo-item">Diseño Web</strong>
+                                    <br>
+                                    <strong><span class="texto-oscuro">Alkemy</span></strong>
+                                    <br>
+                                    2023
+                                <ul>
+                                    <li>
+                                        HTML, CSS y Bootstrap.
+                                    </li>
+                                </ul>
+                                </p>
+                            </article>
+                        </div>
+                    </div>
+                    <hr class="divider d-md-none">
+                    <div class="columna-estudio col-12 col-lg-4">
+                        <div class="row m-0">
+                            <aside class="col-3">
+                                <img class="img-icono" src="./img/trabajo-estudios/icon-estudio-java.png" alt="java">
+                            </aside>
+                            <article class="detalles col-9">
+                                <p>
+                                    <strong class="titulo-item">Master en desarrollo completo de Java</strong>
+                                    <br>
+                                    <strong><span class="texto-oscuro">Udemy</span></strong>
+                                    <br>
+                                    2022 - 2023
+                                <ul>
+                                    <li>
+                                        Java y Spring.
+                                    </li>
+                                </ul>
+                                </p>
+                            </article>
+                        </div>
+                    </div>
+                    <hr class="divider d-md-none">
+                    <div class="columna-estudio col-12 col-lg-4">
+                        <div class="row m-0">
+                            <aside class="col-3">
+                                <img class="img-icono" src="./img/trabajo-estudios/icon-estudio-fullstack.png"
+                                    alt="fullstack">
+                            </aside>
+                            <article class="detalles col-9">
+                                <p>
+                                    <strong class="titulo-item">Full Stack Web Developer</strong>
+                                    <br>
+                                    <strong><span class="texto-oscuro">Argentina Programa</span></strong>
+                                    <br>
+                                    2020 - 2022
+                                <ul>
+                                    <li>
+                                        Angular, Java, SpringBoot.
+                                    </li>
+                                </ul>
+                                </p>
+                            </article>
+                        </div>
+                    </div>
+                    <hr class="divider d-md-none">
+                    <div class="columna-estudio col-12 col-lg-4">
+                        <div class="row m-0">
+                            <aside class="col-3">
+                                <img class="img-icono" src="./img/trabajo-estudios/icon-estudio-apps.png"
+                                    alt="apps moviles">
+                            </aside>
+                            <article class="detalles col-9">
+                                <p>
+                                    <strong class="titulo-item">Desarrollo de apps móviles</strong>
+                                    <br>
+                                    <strong><span class="texto-oscuro">Google</span></strong>
+                                    <br>
+                                    2021
+                                <ul>
+                                    <li>
+                                        Proceso de desarrollo productivo de aplicaciones móviles en Android.
+                                    </li>
+                                </ul>
+                                </p>
+                            </article>
+                        </div>
+                    </div>
+                    <hr class="divider d-md-none">
+                    <div class="columna-estudio col-12 col-lg-4">
+                        <div class="row m-0">
+                            <aside class="col-3">
+                                <img class="img-icono" src="./img/trabajo-estudios/icon-estudio-js.png"
+                                    alt="apps moviles">
+                            </aside>
+                            <article class="detalles col-9">
+                                <p>
+                                    <strong class="titulo-item">JavaScript Moderno ES6</strong>
+                                    <br>
+                                    <strong><span class="texto-oscuro">Udemy</span></strong>
+                                    <br>
+                                    2022
+                                <ul>
+                                    <li>
+                                        JavaScript, buenas prácticas del lenguaje y ES6.
+                                    </li>
+                                </ul>
+                                </p>
+                            </article>
+                        </div>
+                    </div>
+                    <hr class="divider d-md-none">
+                    <div class="columna-estudio col-12 col-lg-4">
+                        <div class="row m-0">
+                            <aside class="col-3">
+                                <img class="img-icono" src="./img/trabajo-estudios/icon-estudio-algoritmos.png"
+                                    alt="fundamentos">
+                            </aside>
+                            <article class="detalles col-9">
+                                <p>
+                                    <strong class="titulo-item">Fundamentos de Programación, Algoritmos en Java y
+                                        Javascript</strong>
+                                    <br>
+                                    <strong><span class="texto-oscuro">Udemy</span></strong>
+                                    <br>
+                                    2020
+                                <ul>
+                                    <li>
+                                        Algoritmos, pseudocódigos, diagramas de flujo, Java y JavaScript.
+                                    </li>
+                                </ul>
+                                </p>
+                            </article>
+                        </div>
+                    </div>
+                    <hr class="divider d-md-none">
+                    <div class="columna-estudio col-12 col-lg-4">
+                        <div class="row m-0">
+                            <aside class="col-3">
+                                <img class="img-icono" src="./img/trabajo-estudios/icon-estudio-git.png" alt="git">
+                            </aside>
+                            <article class="detalles col-9">
+                                <p>
+                                    <strong class="titulo-item">Introducción a Git y GitHub</strong>
+                                    <br>
+                                    <strong><span class="texto-oscuro">TodoCode Academy</span></strong>
+                                    <br>
+                                    2022
+                                <ul>
+                                    <li>
+                                        Git, GitHub.
+                                    </li>
+                                </ul>
+                                </p>
+                            </article>
+                        </div>
+                    </div>
+                    <hr class="divider d-md-none">
+                    <div class="columna-estudio col-12 col-lg-4">
+                        <div class="row m-0">
+                            <aside class="col-3">
+                                <img class="img-icono" src="./img/trabajo-estudios/icon-estudio-sql.png" alt="sql">
+                            </aside>
+                            <article class="detalles col-9">
+                                <p>
+                                    <strong class="titulo-item">Introducción a las Bases de Datos</strong>
+                                    <br>
+                                    <strong><span class="texto-oscuro">TodoCode Academy</span></strong>
+                                    <br>
+                                    2022
+                                <ul>
+                                    <li>
+                                        SQL y MySQL Workbench.
+                                    </li>
+                                </ul>
+                                </p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <hr class="divider">
+
+        <section id="contacto">
+            <h2 class="titulo-seccion no-transform">Contacto</h2>
+            <article class="contenedor-interno container mt-3">
+                <div class="row">
+                    <div class="col-12 col-md-6 mapa">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46486.96406163631!2d-65.35424969713772!3d-43.26325650288564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbe0144b6cf6769bb%3A0x9cbd6c76af132e0d!2sTrelew%2C%20Chubut!5e0!3m2!1ses-419!2sar!4v1700347224196!5m2!1ses-419!2sar"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="col-12 col-md-6 datos">
+                        <address>
+                            <div class="container d-flex">
+                                <i class="icono-contacto bi bi-geo-alt"></i>
+                                <div class="container">
+                                    <h3 class="titulo-contacto">
+                                        Localidad
+                                    </h3>
+                                    <p class="texto-contacto">
+                                        Trelew, Chubut, Argentina
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="container d-flex">
+                                <i class="icono-contacto bi bi-envelope"></i>
+                                <div class="container">
+                                    <h3 class="titulo-contacto">
+                                        Correo
+                                    </h3>
+                                    <p class="texto-contacto">
+                                        simplementebennett@gmail.com
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="container d-flex">
+                                <i class="icono-contacto bi bi-phone"></i>
+                                <div class="container">
+                                    <h3 class="titulo-contacto">
+                                        Teléfono
+                                    </h3>
+                                    <p class="texto-contacto">
+                                        +54 2804 860295
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="container d-flex">
+                                <i class="icono-contacto bi bi-linkedin"></i>
+                                <div class="container">
+                                    <h3 class="titulo-contacto">
+                                        Linkedin
+                                    </h3>
+                                    <p class="texto-contacto">
+                                        linkedin.com/in/bennett-imhoff/
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="container d-flex">
+                                <i class="icono-contacto bi bi-github"></i>
+                                <div class="container">
+                                    <h3 class="titulo-contacto">
+                                        GitHub
+                                    </h3>
+                                    <p class="texto-contacto">
+                                        https://github.com/bennett-imhoff
+                                    </p>
+                                </div>
+                            </div>
+                        </address>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer class="mt-3 d-flex flex-column align-items-center">
+        <h2 class="titulo-footer">Gracias por visitar mi portfolio</h2>
+        <p class="subtitulo-footer"><em>¿Listo para colaborar juntos en algo genial? <br>¡Contactame para empezar!</em></p>
+        <section class="redes-sociales d-flex mt-3 pt-0">
+            <a href="linkedin.com/in/bennett-imhoff/" class="link-redes-sociales" target="_blank"><i class="bi bi-linkedin"></i></a>
+            <a href="https://github.com/bennett-imhoff" class="link-redes-sociales" target="_blank"><i class="bi bi-github"></i></a>
+            <a href="wa.me/+5492804860295" class="link-redes-sociales" target="_blank"><i class="bi bi-linkedin"></i></a>
+            <a href="https://discord.gg/whf9RTmH" class="link-redes-sociales" target="_blank"><i class="bi bi-discord"></i></a>
+        </section>
+        <p class="made-by">Diseñado por <br><span>María A. Gómez</span> y <span>Bennett Imhoff Anzor</span>.</p>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

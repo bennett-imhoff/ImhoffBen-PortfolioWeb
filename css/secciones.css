@@ -1,0 +1,437 @@
+section:not(:first-child){
+    padding-top:50px;
+    scroll-margin-top:50px;
+}
+
+.titulo-seccion, .subtitulo-sobre-mi{
+    font-family: 'Raleway';
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    margin:auto;
+    padding-bottom:5px !important;
+    border-bottom:2px solid #5cb874;
+}
+
+.titulo-seccion{
+    font-size:25px;
+    width:fit-content;
+}
+
+.subtitulo-sobre-mi{
+    font-size:20px;
+    width:fit-content;
+    margin:15px auto !important;
+}
+
+.texto-sobre-mi{
+    font-family: 'Open Sans';
+    font-size: 16px;
+    text-align: center;
+    width:90%;
+    margin:20px auto;
+}
+
+.texto-largo {
+    display: none;
+}
+
+.texto-corto, .texto-largo{
+    margin: 0;
+    padding: 0;
+}
+
+.texto-agradecimiento{
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.ver-mas-label{
+    margin-top:10px;
+}
+.ver-mas-label::after {
+    content: '...Ver más';
+    color: #5cb874;
+    cursor: pointer;
+}
+
+#ver-mas:checked ~ .texto-largo {
+    display: block;
+}
+
+#ver-mas:checked ~ .ver-mas-label::after {
+    content: 'Mostrar menos';
+}
+
+.contenedor-proyectos{
+    margin-top:25px;
+}
+
+.resumen-proyecto{
+    margin:25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.titulo-proyecto-card{
+    text-align: center;
+}
+
+.img-proyecto-card{
+    border:1px solid rgb(167, 167, 167);
+}
+
+.contenedor-categorias{
+    margin:25px;
+}
+
+.categoria-habilidad{
+    border:none;
+}
+
+.img-categoria{
+    font-size:60px;
+    width:fit-content;
+    cursor: pointer;
+    transition: font-size 0.3s ease;
+}
+
+.img-categoria:hover{
+    font-size:80px;
+    padding:0;
+}
+
+.no-transform{
+    position:relative;
+    transition: font-size 0.3 ease;
+    z-index:1;
+}
+
+.titulo-categoria, .texto-categoria{
+    font-family: 'Open Sans';
+    text-align: center;
+}
+
+.titulo-categoria{
+    font-weight: bold;
+}
+
+.btn-categoria{
+    font-weight: bold;
+    color:#5cb874;
+    background-color: white;
+    width: fit-content;
+    border: 1.5px solid #5cb874;
+}
+
+.btn-categoria:hover{
+    color:green;
+    border-color: green;
+}
+
+/**********************************************
+*   DISPOSITIVOS GRANDES, DESDE 720 HASTA 991
+***********************************************/
+@media screen and (min-width:720px) {
+    section:not(:first-child){
+        padding-top:57px;
+        scroll-margin-top:57px;
+    }
+
+    .titulo-seccion{
+        font-size:45px;
+    }
+
+    .subtitulo-sobre-mi{
+        font-size:38px;
+        margin:25px auto !important;
+    }
+    
+    .texto-sobre-mi{
+        font-size: 25px;
+        width:85%;
+    }
+    
+    .ver-mas-label{
+        margin-top:20px;
+    }
+
+    .contenedor-proyectos{
+        margin-top:0px;
+    }
+    
+    .resumen-proyecto{
+        margin:80px;
+        padding:20px 50px;
+    }
+
+    .titulo-proyecto-card{
+        font-size:35px;
+    }
+
+    .texto-proyecto-card, .resumen-proyecto .btn{
+        font-size: 23px;
+        line-height: 2;
+        margin-top:20px;
+    }
+
+    .contenedor-categorias{
+        margin:125px;
+    }
+    
+    .categoria-habilidad{
+        margin-top:50px;
+        margin-bottom:50px;
+    }
+    
+    .img-categoria{
+        font-size:80px;
+    }
+    
+    .img-categoria:hover{
+        font-size:100px;
+    }
+    
+    .titulo-categoria, .texto-categoria{
+        font-family: 'Open Sans';
+        text-align: center;
+    }
+    
+    .titulo-categoria{
+        font-size: 35px;
+        font-weight: bold;
+    }
+
+    .texto-categoria, .btn-categoria{
+        font-size:28px;
+    }
+    
+    .btn-categoria{
+        margin-top:30px;
+    }
+}
+
+/**********************************************
+*   TABLES PEQUEÑAS, DESDE 992px HASTA 1365px
+***********************************************/
+@media screen and (min-width:992px) {
+    section:not(:first-child){
+        padding-top:108px;
+        scroll-margin-top:108px;
+    }
+
+    .titulo-seccion{
+        font-size:35px;
+    }
+
+    .subtitulo-sobre-mi{
+        font-size:30px;
+        margin:20px auto !important;
+    }
+    
+    .texto-sobre-mi{
+        font-size: 20px;
+        width:80%;
+    }
+
+    .contenedor-proyectos{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top:30px;
+    }
+    
+    .resumen-proyecto{
+        margin:40px;
+    }
+
+    .titulo-proyecto-card{
+        font-size:30px;
+        height:72px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .texto-proyecto-card{
+        height: 330px;
+    }
+
+    .img-proyecto-card{
+        height:175px;
+    }
+}
+
+/**********************************************
+*   ORDENADOR PORTATIL, DESDE 1366px HASTA 1919
+***********************************************/
+@media screen and (min-width:1366px) {
+    section:not(:first-child){
+        padding-top:72px;
+        scroll-margin-top:72px;
+    }
+
+    .titulo-seccion{
+        font-size:25px;
+    }
+
+    .subtitulo-sobre-mi{
+        font-size:22px;
+        margin:15px auto !important;
+    }
+    
+    .texto-sobre-mi{
+        font-size: 18px;
+        line-height:2;
+        width:85%;
+    }
+
+    .texto-largo{
+        display: block;
+    }
+
+    label{
+        display:none;
+    }
+
+    .contenedor-proyectos{
+        grid-template-columns: repeat(3, 1fr);
+        margin-top:20px;
+    }
+    
+    .resumen-proyecto{
+        margin:20px;
+    }
+
+    .resumen-proyecto:hover{
+        margin:10px;
+    }
+
+    .titulo-proyecto-card{
+        font-size:25px;
+        height:40px;
+    }
+
+    .resumen-proyecto .btn, .texto-proyecto-card{
+        font-size:18px;
+    }
+
+    .texto-proyecto-card{
+        height: 175px;
+    }
+
+    .contenedor-categorias{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin:0;
+    }
+    
+    .categoria-habilidad{
+        margin:35px 15px;
+    }
+    
+    .img-categoria{
+        font-size:45px;
+    }
+    
+    .img-categoria:hover{
+        font-size:60px;
+    }
+    
+    .titulo-categoria{
+        font-size: 25px;
+    }
+
+    .texto-categoria, .btn-categoria{
+        font-size:18px;
+    }
+
+    .texto-categoria{
+        height: 135px;
+        margin-top:20px;
+        margin-bottom:0px;
+    }
+    
+    .btn-categoria{
+        margin-top:0px;
+    }
+}
+
+/**********************************************
+*   PC GRANDE., DESDE 1920px EN ADELANTE
+***********************************************/
+@media screen and (min-width:1920px) {
+    section:not(:first-child){
+        padding-top:62px;
+        scroll-margin-top:62px;
+    }
+
+    .titulo-seccion{
+        font-size:40px;
+    }
+
+    .subtitulo-sobre-mi{
+        font-size:30px;
+    }
+    
+    .texto-sobre-mi{
+        font-size: 25px;
+        width:85%;
+    }
+
+    .contenedor-proyectos{
+        grid-template-columns: repeat(5, 1fr);
+        margin-top:20px;
+    }
+    
+    .resumen-proyecto{
+        margin:20px;
+        margin-bottom:75px;
+        padding:20px;
+    }
+
+    .resumen-proyecto:hover{
+        margin:10px;
+    }
+
+    .titulo-proyecto-card{
+        font-size:30px;
+        height:72px;
+    }
+
+    .resumen-proyecto .btn, .texto-proyecto-card{
+        font-size:20px;
+    }
+
+    .texto-proyecto-card{
+        height: 235px;
+    }
+    
+    .categoria-habilidad{
+        margin:35px 25px;
+    }
+    
+    .img-categoria{
+        font-size:55px;
+    }
+    
+    .img-categoria:hover{
+        font-size:70px;
+    }
+    
+    .titulo-categoria{
+        font-size: 30px;
+    }
+
+    .texto-categoria, .btn-categoria{
+        font-size:25px;
+    }
+
+    .texto-categoria{
+        height: 170px;
+        margin-top:20px;
+        margin-bottom:0px;
+    }
+    
+    .btn-categoria{
+        margin-top:15px;
+    }
+}

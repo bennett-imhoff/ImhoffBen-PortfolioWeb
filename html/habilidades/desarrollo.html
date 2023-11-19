@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ben Imhoff - Desarrollo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="../../img/iconos-title/code.png" rel="icon">
+    <link href="../../css/habilidades.css" rel="stylesheet">
+</head>
+<body>
+    <section id="header" class="fixed-top bg-light">
+        <header class="d-flex align-items-center">
+            <div class="contenedor-barra-superior container d-flex align-items-center navbar-light">
+                <h1 class="nombre-portfolio me-auto"><a href="../../index.html">Bennett Imhoff</a></h1>
+                <a href="../../index.html" class="btn-atras">
+                    <div class="d-flex align-items-center my-auto">
+                        <i class="icono-atras bi bi-arrow-left-circle"></i>
+                        <p class="texto-atras">Atrás</p>
+                    </div>
+                </a>
+            </div>
+        </header>
+    </section>
+
+    <main id="main-categoria-habilidad">
+        <section id="inicio-categorias" class="d-flex flex-column align-items-center">
+            <i class="img-categoria bi bi-code" style="color:#aa9bdf"></i>
+            <h1 class="titulo-categoria">Desarrollo</h1>
+            <ul class="nav opciones">
+                <li class="item-categoria nav-item">
+                  <a class="nav-link" href="#lenguajes" style="transition: color 0.3s" onmouseover="this.style.color='#aa9bdf'" onmouseout="this.style.color='rgb(46, 46, 46)'">Lenguajes</a>
+                </li>
+                <li class="item-categoria nav-item">
+                  <a class="nav-link" href="#frameworks" style="transition: color 0.3s" onmouseover="this.style.color='#aa9bdf'" onmouseout="this.style.color='rgb(46, 46, 46)'">Frameworks</a>
+                </li>
+                <li class="item-categoria nav-item">
+                  <a class="nav-link" href="#bases-de-datos" style="transition: color 0.3s" onmouseover="this.style.color='#aa9bdf'" onmouseout="this.style.color='rgb(46, 46, 46)'">Bases de datos</a>
+                </li>
+                <li class="item-categoria nav-item">
+                    <a class="nav-link" href="#control-versiones" style="transition: color 0.3s" onmouseover="this.style.color='#aa9bdf'" onmouseout="this.style.color='rgb(46, 46, 46)'">Control de versiones</a>
+                </li>
+            </ul>
+        </section>
+
+        <hr class="divider">
+
+        <section id="desarrollo">
+            <h2 class="titulo-subcategoria" id="lenguajes">Lenguajes</h2>
+            <article class="contenedor-lenguajes">
+                <div class="lenguaje d-flex align-items-center">
+                    <i class="bi bi-filetype-java icono-lenguaje"></i>
+                    <h3 class="nombre-lenguaje">Java</h3>
+                    <progress class="barra-progreso" id="progreso-java" max="100" value="72">72%</progress>
+                </div>
+                <hr class="divider-lenguajes">
+                <div class="lenguaje d-flex align-items-center">
+                    <i class="bi bi-filetype-js icono-lenguaje"></i>
+                    <h3 class="nombre-lenguaje">JavaScript</h3>
+                    <progress class="barra-progreso" id="progreso-javascript" max="100" value="53">53%</progress>
+                </div>
+                <hr class="divider-lenguajes">
+                <div class="lenguaje d-flex align-items-center">
+                    <i class="bi bi-filetype-tsx icono-lenguaje"></i>
+                    <h3 class="nombre-lenguaje">TypeScript</h3>
+                    <progress class="barra-progreso" id="progreso-typescript" max="100" value="49">49%</progress>
+                </div>
+                <hr class="divider-lenguajes">
+                <div class="lenguaje d-flex align-items-center">
+                    <i class="bi bi-filetype-php icono-lenguaje"></i>
+                    <h3 class="nombre-lenguaje">PHP</h3>
+                    <progress class="barra-progreso" id="progreso-php" max="100" value="14">14%</progress>
+                </div>
+            </article>
+            <h2 class="titulo-subcategoria mt-5" id="frameworks">Frameworks</h2>
+            <article class="contenedor-frameworks">
+                <div class="framework d-flex flex-column align-items-center">
+                    <img class="img-framework" src="../../img/tecnologias/icon-spring.svg" alt="spring">
+                    <h3 class="nombre-framework">Spring</h3>
+                    <p class="experticia-framework">Avanzado</p>
+                </div>
+                <div class="framework d-flex flex-column align-items-center">
+                    <img class="img-framework" src="../../img/tecnologias/icon-spring-boot.png" alt="spring boot">
+                    <h3 class="nombre-framework">Spring Boot</h3>
+                    <p class="experticia-framework">Avanzado</p>
+                </div>
+                <div class="framework d-flex flex-column align-items-center">
+                    <img class="img-framework" src="../../img/tecnologias/icon-angular.png" alt="angular">
+                    <h3 class="nombre-framework">Angular</h3>
+                    <p class="experticia-framework">Intermedio</p>
+                </div>
+                <div class="framework d-flex flex-column align-items-center">
+                    <img class="img-framework" src="../../img/tecnologias/icon-vue.png" alt="vue">
+                    <h3 class="nombre-framework">Vue</h3>
+                    <p class="experticia-framework">Principiante</p>
+                </div>
+                <div class="framework d-flex flex-column align-items-center">
+                    <img class="img-framework" src="../../img/tecnologias/icon-react.png" alt="react">
+                    <h3 class="nombre-framework">React</h3>
+                    <p class="experticia-framework">Principiante</p>
+                </div>
+            </article>
+            <h2 class="titulo-subcategoria mt-3" id="bases-de-datos">Bases de datos</h2>
+            <article class="contenedor-bases-de-datos">
+                <div class="base-de-datos d-flex flex-column align-items-center">
+                    <img class="img-bbdd" src="../../img/tecnologias/icon-mysql.png" alt="mysql">
+                    <h3 class="nombre-bbdd">MySQL</h3>
+                    <p class="experticia-bbdd">Avanzado</p>
+                </div>
+                <div class="base-de-datos d-flex flex-column align-items-center">
+                    <img class="img-bbdd" src="../../img/tecnologias/icon-oracle.png" alt="oracle">
+                    <h3 class="nombre-bbdd">Oracle</h3>
+                    <p class="experticia-bbdd">Intermedio</p>
+                </div>
+                <div class="base-de-datos d-flex flex-column align-items-center">
+                    <img class="img-bbdd" src="../../img/tecnologias/icon-mariadb.svg" alt="mariadb">
+                    <h3 class="nombre-bbdd">MariaDB</h3>
+                    <p class="experticia-bbdd">Principiante</p>
+                </div>
+            </article>
+            <h2 class="titulo-subcategoria mt-3" id="control-versiones">Control de versiones</h2>
+            <article class="d-flex flex-column align-items-center mx-auto contenedor-control-versiones">
+                <img class="img-git" src="../../img/tecnologias/icon-git.png" alt="git">
+                <p class="texto-git">Para lo referido a control de versiones, en todos mis proyectos he utilizado Git. En los proyectos personales, prefiero subir mis versiones a <a href="https://github.com/" class="enlace-git">GitHub</a> pero en los proyectos laborales he utilizado <a href="https://about.gitlab.com/" class="enlace-git">GitLab</a>.</p>
+            </article>
+        </section>
+        
+    </main>
+
+    <footer class="mt-3 d-flex flex-column align-items-center">
+        <h2 class="titulo-footer">Gracias por visitar mi portfolio</h2>
+        <p class="subtitulo-footer"><em>¿Listo para colaborar juntos en algo genial? <br>¡Contactame para empezar!</em></p>
+        <section class="redes-sociales d-flex mt-3 pt-0">
+            <a href="linkedin.com/in/bennett-imhoff/" class="link-redes-sociales" target="_blank"><i class="bi bi-linkedin"></i></a>
+            <a href="https://github.com/bennett-imhoff" class="link-redes-sociales" target="_blank"><i class="bi bi-github"></i></a>
+            <a href="wa.me/+5492804860295" class="link-redes-sociales" target="_blank"><i class="bi bi-linkedin"></i></a>
+            <a href="https://discord.gg/whf9RTmH" class="link-redes-sociales" target="_blank"><i class="bi bi-discord"></i></a>
+        </section>
+        <p class="made-by">Diseñado por <br><span>María A. Gómez</span> y <span>Bennett Imhoff Anzor</span>.</p>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+</body>
+</html>
