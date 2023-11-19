@@ -9,5 +9,5 @@ Además, podrán navegar por una sección de proyectos en donde verán una descr
                                       
 Por último, encontrarán también mi información de contacto junto con enlaces, en el footer, a mis redes sociales activas.
                                                         
-¡Gracias por interesrse en leer!                                                   
+¡Gracias por interesarte en leer!                                                   
 Cualquier comentario que tengas o idea que surja, es más que bienvenido.
